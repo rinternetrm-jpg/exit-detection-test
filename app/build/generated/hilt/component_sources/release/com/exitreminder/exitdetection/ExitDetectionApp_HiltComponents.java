@@ -5,6 +5,7 @@ import com.exitreminder.exitdetection.presentation.screens.analysis.AnalysisView
 import com.exitreminder.exitdetection.presentation.screens.home.HomeViewModel_HiltModules;
 import com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestViewModel_HiltModules;
 import com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel_HiltModules;
+import com.exitreminder.exitdetection.presentation.screens.settings.SettingsViewModel_HiltModules;
 import com.exitreminder.exitdetection.receiver.BootReceiver_GeneratedInjector;
 import com.exitreminder.exitdetection.receiver.ReminderActionReceiver_GeneratedInjector;
 import com.exitreminder.exitdetection.service.ExitMonitorService_GeneratedInjector;
@@ -167,7 +168,8 @@ public final class ExitDetectionApp_HiltComponents {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HomeViewModel_HiltModules.KeyModule.class,
           LiveTestViewModel_HiltModules.KeyModule.class,
-          ReminderConfigViewModel_HiltModules.KeyModule.class
+          ReminderConfigViewModel_HiltModules.KeyModule.class,
+          SettingsViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -207,7 +209,8 @@ public final class ExitDetectionApp_HiltComponents {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           HomeViewModel_HiltModules.BindsModule.class,
           LiveTestViewModel_HiltModules.BindsModule.class,
-          ReminderConfigViewModel_HiltModules.BindsModule.class
+          ReminderConfigViewModel_HiltModules.BindsModule.class,
+          SettingsViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped

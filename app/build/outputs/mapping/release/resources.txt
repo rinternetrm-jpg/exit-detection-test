@@ -1,84 +1,9 @@
-Marking id:tag_unhandled_key_listeners:2131165272 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_unknown_issue:2131427359 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:wrapped_composition_tag:2131165284 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:tag_on_apply_window_listener:2131165265 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:tag_window_insets_animation_callback:2131165273 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_enable_button:2131427351 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_update_button:2131427361 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_install_button:2131427354 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_notification_ticker:2131427358 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_open_on_phone:2131427366 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:common_full_open_on_phone:2131099649 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_notification_channel_name:2131427357 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking style:DialogWindowTheme:2131492864 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:compose_view_saveable_id_tag:2131165230 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:hide_in_inspector_tag:2131165238 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:view_tree_view_model_store_owner:2131165281 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:pooling_container_listener_holder_tag:2131165255 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:view_tree_saved_state_registry_owner:2131165280 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:tag_unhandled_key_event_manager:2131165271 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:inspection_slot_table_set:2131165243 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:androidx_compose_ui_view_composition_context:2131165224 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_monitoring:2131099680 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_0:2131165185 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_1:2131165186 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_2:2131165197 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_3:2131165208 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_4:2131165211 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_5:2131165212 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_6:2131165213 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_7:2131165214 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_8:2131165215 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_9:2131165216 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_10:2131165187 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_11:2131165188 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_12:2131165189 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_13:2131165190 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_14:2131165191 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_15:2131165192 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_16:2131165193 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_17:2131165194 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_18:2131165195 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_19:2131165196 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_20:2131165198 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_21:2131165199 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_22:2131165200 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_23:2131165201 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_24:2131165202 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_25:2131165203 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_26:2131165204 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_27:2131165205 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_28:2131165206 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_29:2131165207 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_30:2131165209 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:accessibility_custom_action_31:2131165210 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:indeterminate:2131427411 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:off:2131427426 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:on:2131427428 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:selected:2131427438 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:not_selected:2131427422 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:template_percent:2131427448 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:in_progress:2131427410 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:tab:2131427447 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:switch_role:2131427446 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:view_tree_on_back_pressed_dispatcher_owner:2131165279 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:is_pooling_container_tag:2131165244 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_window_insets_animation_callback:2131165273 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_on_apply_window_listener:2131165265 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:androidx_startup:2131427332 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:view_tree_lifecycle_owner:2131165278 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:report_drawn:2131165256 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_exit:2131099677 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_check:2131099676 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_warning:2131099681 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking id:consume_window_insets_tag:2131165231 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_updating_text:2131427364 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_unsupported_text:2131427360 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_enable_text:2131427352 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_wear_update_text:2131427365 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_update_text:2131427362 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_install_text:2131427355 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_enable_title:2131427353 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_update_title:2131427363 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:common_google_play_services_install_title:2131427356 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:default_popup_window_title:2131427402 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:compose_view_saveable_id_tag:2131165230 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tag_screen_reader_focusable:2131165268 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tag_accessibility_heading:2131165263 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tag_accessibility_pane_title:2131165264 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -86,7 +11,8 @@ Marking id:tag_state_description:2131165269 reachable: referenced from /opt/exit
 Marking id:tag_accessibility_actions:2131165261 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:accessibility_action_clickable_span:2131165184 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tag_accessibility_clickable_spans:2131165262 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking string:default_popup_window_title:2131427402 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:wrapped_composition_tag:2131165284 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_monitoring:2131099680 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:navigation_menu:2131427418 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:close_drawer:2131427348 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:close_sheet:2131427349 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -150,6 +76,80 @@ Marking string:time_picker_minute:2131427455 reachable: referenced from /opt/exi
 Marking string:time_picker_hour_text_field:2131427454 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:time_picker_minute_text_field:2131427458 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:tooltip_pane_description:2131427464 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_unknown_issue:2131427359 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_updating_text:2131427364 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_unsupported_text:2131427360 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_enable_text:2131427352 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_wear_update_text:2131427365 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_update_text:2131427362 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_install_text:2131427355 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_enable_title:2131427353 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_update_title:2131427363 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_install_title:2131427356 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131165279 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_exit:2131099677 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_check:2131099676 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_warning:2131099681 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_unhandled_key_listeners:2131165272 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:androidx_compose_ui_view_composition_context:2131165224 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:consume_window_insets_tag:2131165231 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking style:DialogWindowTheme:2131492864 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_lifecycle_owner:2131165278 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:pooling_container_listener_holder_tag:2131165255 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:is_pooling_container_tag:2131165244 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_unhandled_key_event_manager:2131165271 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:report_drawn:2131165256 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:hide_in_inspector_tag:2131165238 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_enable_button:2131427351 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_update_button:2131427361 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_install_button:2131427354 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_notification_ticker:2131427358 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_open_on_phone:2131427366 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:common_full_open_on_phone:2131099649 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:common_google_play_services_notification_channel_name:2131427357 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:inspection_slot_table_set:2131165243 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_view_model_store_owner:2131165281 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_0:2131165185 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_1:2131165186 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_2:2131165197 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_3:2131165208 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_4:2131165211 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_5:2131165212 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_6:2131165213 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_7:2131165214 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_8:2131165215 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_9:2131165216 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_10:2131165187 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_11:2131165188 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_12:2131165189 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_13:2131165190 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_14:2131165191 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_15:2131165192 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_16:2131165193 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_17:2131165194 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_18:2131165195 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_19:2131165196 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_20:2131165198 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_21:2131165199 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_22:2131165200 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_23:2131165201 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_24:2131165202 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_25:2131165203 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_26:2131165204 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_27:2131165205 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_28:2131165206 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_29:2131165207 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_30:2131165209 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_31:2131165210 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:indeterminate:2131427411 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:off:2131427426 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:on:2131427428 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:selected:2131427438 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:not_selected:2131427422 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:template_percent:2131427448 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:in_progress:2131427410 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tab:2131427447 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:switch_role:2131427446 reachable: referenced from /opt/exit-detection-test/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 android.content.res.Resources#getIdentifier present: true
 Web content present: false
 Referenced Strings:
@@ -176,8 +176,8 @@ currentStep
 0
 1
 textSelectionRange
-ACTION_PRESS_AND_HOLD
 size
+ACTION_PRESS_AND_HOLD
 left
 kotlinx.coroutines.DefaultExecutor
 notnull
@@ -186,8 +186,8 @@ role
 S_RESUMING_BY_RCV
 contentPadding
 Selection
-emoji2.text.DefaultEmojiConfig
 displayName
+emoji2.text.DefaultEmojiConfig
 BEGIN_OBJECT
 H
 Prefix
@@ -205,55 +205,55 @@ constructor.parameterTypes
 EXTRA_BENCHMARK_OPERATION
 _
 a
-Center
 b
+Center
 predictionJson
-address
 c
+address
 ACTION_CLEAR_ACCESSIBILITY_FOCUS
 SUCCESS
 exit_events
 Infinity
 d
-Compose:unobserve
 e
+Compose:unobserve
 h
 Transform.kt
 truncated
-RESUMING_BY_EB
 kotlin.String
-m
+RESUMING_BY_EB
 cookieJar
+m
 OnClick
 n
 reminder_config/
 r
 DRIVE_EXTERNAL_STORAGE_REQUIRED
 s
+java.lang.Module
 SUSPEND
 t
-java.lang.Module
-kotlinx.coroutines.flow.DistinctFlowI...
-unsafeCursor
 TypefaceCompatApi26Impl
+unsafeCursor
 pathSegment
+kotlinx.coroutines.flow.DistinctFlowI...
 cipherSuites
 x
 ProgressBarRangeInfo
 BLOCK_ALL
-Start
 POST
+Start
 reader
 PRIORITY
-Filled.Wifi
 isTagEnabled
+Filled.Wifi
 PASSIVE
 RIGHT_WORD
 payload
 Checkbox
 removeMethod
-FALSE_ALARM
 Multiply
+FALSE_ALARM
 ACTION_SCROLL_FORWARD
 SIGN_IN_REQUIRED
 bufferEndSegment
@@ -263,15 +263,15 @@ SIGN_IN_FAILED
 H2_PRIOR_KNOWLEDGE
 TLS_PSK_WITH_AES_128_CBC_SHA
 com.google.android.gms.signin.interna...
-Rgb
 list
+Rgb
 dagger.hilt.android.components.ViewCo...
 UNSET_PRIMARY_NAV
 com.google.android.location.internal....
 Bottom
 End
-child
 cid
+child
 androidx.view.accessibility.Accessibi...
 UNDO
 COMPLETING_WAITING_CHILDREN
@@ -287,6 +287,7 @@ WordBreak.None
 unsupported
 http2Connection
 provider
+Filled.VisibilityOff
 kotlinx.coroutines.flow.FlowKt__Reduc...
 NaN
 kotlinx.coroutines.main.delay
@@ -295,8 +296,8 @@ Age
 navigationBars
 headers
 WAS_IN_GARDEN
-deqIdx
 kotlin.collections.List
+deqIdx
 compose:lazylist:prefetch:measure
 org.bouncycastle.jsse.provider.Bouncy...
 args
@@ -308,15 +309,15 @@ android.view.View$AttachInfo
 java.lang.Float
 Dispatchers.IO
 ReminderActionReceiver
-fixups
 InactivePendingWork
+fixups
 exit_monitoring
-typicalExitDuration
 SharingStarted.Eagerly
+typicalExitDuration
 TransformOriginInterruptionHandling
 autoMigrationSpecs
-LookaheadLayingOut
 androidx.profileinstaller.action.SAVE...
+LookaheadLayingOut
 android.os.Build$VERSION
 executor
 SERVICE_MISSING
@@ -334,11 +335,11 @@ TLS_KRB5_WITH_DES_CBC_SHA
 toggleableState
 EmojiSupportMatch.Default
 %22
-$this$Button
 byte
+$this$Button
 TextSubstitution
-dataJson
 Square
+dataJson
 connectionSpecs
 NEW_LINE
 callEnd
@@ -355,8 +356,8 @@ kotlinx.coroutines.flow.internal.Chan...
 taskRunner
 hash
 TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SH...
-Warning
 foreignKeys
+Warning
 ACTION_SCROLL_IN_DIRECTION
 sslSocket.enabledProtocols
 INADEQUATE_SECURITY
@@ -374,8 +375,8 @@ sslParameters
 java.lang.String
 %40
 Karte
-onNavigateToSettings
 reminder
+onNavigateToSettings
 HIGH_ACCURACY
 HorizontalScrollAxisRange
 SSL_RSA_WITH_RC4_128_MD5
@@ -414,20 +415,20 @@ supportedCipherSuites
 _cur
 mStableInsets
 READ
-android.car.EXTENSIONS
 deferredTrailers
-condition
 200
+android.car.EXTENSIONS
+condition
 $this$surfaceColorAtElevation
 SELECT_PAGE_UP
 204
-REAL
 206
 StructuralEqualityPolicy
+REAL
 END_ARRAY
 _id
-BODY
 kotlin.Throwable
+BODY
 RequestFocus
 parkedWorkersStack
 Horizontal
@@ -441,8 +442,8 @@ LocationResult
 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
 SSLv3
 kotlin.Annotation
-SkipSubtreeAndContinueTraversal
 com.google.android.gms.signin.interna...
+SkipSubtreeAndContinueTraversal
 DEAD_CLIENT
 REDO
 android.permission.NEARBY_WIFI_DEVICES
@@ -458,8 +459,8 @@ mandatorySystemGestures
 API_NOT_CONNECTED
 WLAN
 ENHANCE_YOUR_CALM
-RECONNECTION_TIMED_OUT
 Array
+RECONNECTION_TIMED_OUT
 intrface
 ATTACH
 lengths
@@ -482,8 +483,8 @@ POSITION
 impl
 hostname
 password
-CONNECT_ERROR
 kotlinx.coroutines.scheduler.keep.ali...
+CONNECT_ERROR
 DELETE_NEXT_CHAR
 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 state
@@ -493,7 +494,9 @@ element
 %8s
 requestHeadersEnd
 pending_intent
+Filled.Save
 Compose:releases
+MapCaptureService
 ACTION_SCROLL_DOWN
 SelectionHandleInfo
 SELECT_RIGHT_WORD
@@ -510,8 +513,8 @@ EMERGENCY
 CollectionInfo
 on_delete
 Rtl
-GetTextLayoutResult
 android.hardware.type.automotive
+GetTextLayoutResult
 SELECT_LINE_END
 okhttp/4.12.0
 colors
@@ -548,13 +551,13 @@ secure
 $dbRef
 SelectionStart
 Compose:Composer.dispose
-Container
 Compose
+Container
 java.lang.Short
 Search
 android.widget.Button
-_closeCause
 Oklab
+_closeCause
 androidx.view.accessibility.Accessibi...
 REPLACE
 Eraser
@@ -588,8 +591,8 @@ LAZILY_PARSED_NUMBER
 Stylus
 SEALED
 CREATED
-NO_OWNER
 ContentOrRtl
+NO_OWNER
 TLS_KRB5_WITH_RC4_128_MD5
 TLSv1.3
 TLSv1.2
@@ -604,20 +607,21 @@ Fab
 EXTRA_SKIP_FILE_OPERATION
 INTERNAL_ERROR
 captionBar
-pair
 generic
+pair
 Paragraph
 alternating
 UTF_16BE
 PASTE
 com.google.android.gms.signin.interna...
 INDECISIVE
-Sentences
 short
+Sentences
 FALSE
 TLS_DHE_DSS_WITH_AES_128_CBC_SHA
-Strategy.Unspecified
 COMPLETING_RETRY
+Strategy.Unspecified
+Filled.Visibility
 com.google.android.gms.common.interna...
 TLS_AES_128_CCM_SHA256
 TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
@@ -640,9 +644,10 @@ options
 onNavigateToNewReminder
 ACTION_SHOW_ON_SCREEN
 tokenId
+image_url
 tlsVersion
-customActions
 PreEnter
+customActions
 closeHandler
 hasGarden
 CustomActions
@@ -667,13 +672,13 @@ ssid
 unknown
 undefined
 proxySelector
-android.widget.SeekBar
 headlineMedium
+android.widget.SeekBar
 QueryDispatcher
 INITIALIZED
 awaiter
-producerIndex
 REMOVE
+producerIndex
 SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA
 editor
 LineHeightStyle.Alignment.Bottom
@@ -681,8 +686,8 @@ chain
 ACTION_DRAG_START
 EXIT_TRIGGERED
 END_DOCUMENT
-serverAuthCode
 $this$navigate
+serverAuthCode
 peerSettings
 $violation
 com.google.android.gms.common.interna...
@@ -705,16 +710,16 @@ Bevel
 isActive
 TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
 DefaultDateTypeAdapter
-Send
 RESULT_INSTALL_SUCCESS
+Send
 internalTransactionExecutor
 imageVector
 CollectionItemInfo
 com.google.android.gms.common.interna...
 BoundReached
 KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS
-ALIGN_RIGHT
 loggerName
+ALIGN_RIGHT
 com.google.android.gms.signin.interna...
 CLOSE_HANDLER_INVOKED
 java.lang.Cloneable
@@ -734,31 +739,32 @@ TLS_1_3
 cacheStrategy
 TLS_1_2
 android.permission.ACTIVITY_RECOGNITION
-android.support.action.showsUserInter...
 UPPER_CASE_WITH_UNDERSCORES
+android.support.action.showsUserInter...
 getUri
 PAUSIERT
 request
 SELECT_NEXT_PARAGRAPH
 altitude
-CLOSED
+Speichern
 LocalImageVectorCache
+CLOSED
 GARAGE
 TLS_1_1
 values
+collect$suspendImpl
 TLS_1_0
 part
-collect$suspendImpl
 isContainer
 LocalFocusManager
 consumerIndex
 googleSignInAccount:
 findViewByAccessibilityIdTraversal
 auth.userName
-_removedRef
 Pausieren
-onNavigateBack
+_removedRef
 Idle
+onNavigateBack
 HardLight
 CANCELED
 displayMedium
@@ -769,8 +775,8 @@ SSL_NULL_WITH_NULL_NULL
 LocalDensity
 process
 ActiveParent
-ACTION_SHOW_TOOLTIP
 okhttp.MockWebServer
+ACTION_SHOW_TOOLTIP
 TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
 jClass
 addFontFromAssetManager
@@ -780,6 +786,7 @@ DstOver
 MOVE
 mAttachInfo
 classes.dex
+Verbergen
 TLS_FALLBACK_SCSV
 TLS_DH_anon_WITH_AES_256_CBC_SHA
 Left
@@ -797,9 +804,9 @@ kotlin.reflect.jvm.internal.Reflectio...
 CutText
 COLLAPSED
 tlsVersionsIntersection
-cleanedAndPointers
-DEFAULT_TEST_TAG
 $this$animateColor
+DEFAULT_TEST_TAG
+cleanedAndPointers
 MOVEMENT_DETECTED
 addObserver
 modelClass
@@ -812,9 +819,9 @@ guava.concurrent.generate_cancellatio...
 GMT
 tags
 SIDE_DOOR
+cancellation
 route
 ON_PAUSE
-cancellation
 domain
 :path
 groupAnchor
@@ -822,10 +829,10 @@ Canceled
 allocateInstance
 TraceCompat
 invokeSuspend
-Recomposer:animation
 context.noBackupFilesDir
-getEmojiConsistencySet
+Recomposer:animation
 Wrap
+getEmojiConsistencySet
 secureConnectStart
 getResPackage
 DROP_LATEST
@@ -865,15 +872,15 @@ listener
 GPS
 Upgrade
 BanParcelableUsage
-taskQueue
 createWorkChain
+taskQueue
 Filled.PlayArrow
 AwaitContinuation
 Compose:onForgotten
 NORTH
 kotlin.Boolean
-RoomCursorUtil
 androidx.transition.FragmentTransitio...
+RoomCursorUtil
 _queue
 Profil
 parcel
@@ -882,8 +889,8 @@ profileJson
 count
 SELECT_HOME
 displayLarge
-Weight
 graph
+Weight
 %.1f
 Role
 dagger.hilt.android.components.Activi...
@@ -897,8 +904,8 @@ CASE_INSENSITIVE_ORDER
 FabPosition.Center
 AndroidOwner:onMeasure
 TERMINATED
-session
 compositionLocalMap
+session
 ACTION_SET_SELECTION
 isCtrlPressed
 b1a7dfad375f1b4b7c74060da1f28e72
@@ -921,8 +928,8 @@ SELECT_DOWN
 location_updates_with_callback
 IconCompat
 com.google.android.gms.common.telemet...
-monitor
 Wohnstraße
+monitor
 TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
 %s
 Filled
@@ -931,12 +938,13 @@ multipart/digest
 nodes
 possibleExits
 Expect
-lenientToString
 on_update
+lenientToString
 sQLiteOpenHelper
 DEFAULT
-android.support.allowGeneratedReplies
 DROP_OLDEST
+android.support.allowGeneratedReplies
+com.exitreminder.exitdetection.presen...
 SetText
 updateDisplayListIfDirty
 lastScheduledTask
@@ -972,12 +980,12 @@ arch_disk_io_
 kotlinx.coroutines.flow.SharedFlowImpl
 sun.misc.Unsafe
 server
-randomAccessFile.channel
 LocalClipboardManager
+randomAccessFile.channel
 ACTION_CLEAR_SELECTION
 TestTagsAsResourceId
-Right
 record.message
+Right
 Off
 InvisibleToUser
 DpSize.Unspecified
@@ -990,12 +998,12 @@ map
 Final
 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
 $this$OutlinedButton
-okhttp.Http2
 HIDE
+okhttp.Http2
 SSL_RSA_WITH_NULL_SHA
 COMPRESSED
-ACTION_PAGE_RIGHT
 max
+ACTION_PAGE_RIGHT
 TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA
 proxyType
 serviceResponseIntentKey
@@ -1020,8 +1028,8 @@ Luminosity
 integer
 com.google.android.gms.availability
 feff
-mVisibleInsets
 ContinueTraversal
+mVisibleInsets
 find
 host
 onBackStarted
@@ -1050,6 +1058,7 @@ org.conscrypt.Conscrypt$Version
 HEAD
 statusLine
 Src
+Testen
 TLS_RSA_WITH_AES_256_GCM_SHA384
 ACTION_SCROLL_RIGHT
 certificate
@@ -1068,6 +1077,7 @@ barometerService
 c.superclass
 timeUnit
 possibleExitsJson
+Filled.Key
 DONE_RCV
 Error
 nearestPOIs
@@ -1077,18 +1087,18 @@ authParams
 bytes
 collectionItemInfo
 Completed
-UNINITIALIZED
 callback
+UNINITIALIZED
 RESUME_TOKEN
-writer
 socket
+writer
 ACTION_PASTE
 android.graphics.FontFamily
 Vertical
 00
-SELECT_LEFT_CHAR
 PUBLICATION
 common_google_play_services_restricte...
+SELECT_LEFT_CHAR
 argumentName
 navigationBarsIgnoringVisibility
 Dialog:
@@ -1108,8 +1118,8 @@ streetType
 CUT
 _decision
 Schließen
-0x%02x
 Butt
+0x%02x
 kotlinx.coroutines.flow.AbstractFlow
 LOWER_CASE_WITH_DASHES
 IDENTITY
@@ -1118,26 +1128,27 @@ wss:
 defaultCreationExtras
 SSL_DH_anon_WITH_RC4_128_MD5
 dayOfMonth
-Expand
 unique
+Expand
 TLS_ECDHE_ECDSA_WITH_NULL_SHA
 setCurrentState
 SSL_DH_anon_WITH_3DES_EDE_CBC_SHA
 TLS_PSK_WITH_RC4_128_SHA
 TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384
 FALSE_ALARM_REPORTED
-statusCode
 com.google.android.gms.signin.interna...
+statusCode
 components
 0s
 TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
-latitude
 kotlin.Function
+latitude
 0x
 dagger.hilt.android.components.ViewWi...
 ELEVATOR
-boundaryByteString
 long
+boundaryByteString
+AnalysisViewModel
 min
 ACTION_PAGE_DOWN
 kotlinx.coroutines.channels.defaultBu...
@@ -1159,20 +1170,20 @@ selectProtocol
 TLS_DH_anon_WITH_AES_128_GCM_SHA256
 operation
 common_google_play_services_invalid_a...
-android.widget.EditText
-open
 LocalFontLoader
+open
+android.widget.EditText
 NO_DECISION
 OnLongClick
 com.google.android.gms.signin.interna...
-navigator
 ShuttingDown
+navigator
 Operations:
-PasteText
 socketAdapterFactory
+PasteText
 DESC
-FontFamily.Default
 originalRequest
+FontFamily.Default
 TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
 com.exitreminder.exitdetection
 androidx.profileinstaller.action.INST...
@@ -1189,8 +1200,8 @@ sun.security.ssl.SSLContextImpl
 collection
 PROFILE_CREATED
 BOOLEAN
-name_sleep_segment_request
 Zurück
+name_sleep_segment_request
 immutable
 EXIT_DETECTED
 profileInstalled
@@ -1235,9 +1246,9 @@ Location
 exit_alerts
 kotlinx.coroutines.bufferedChannel.se...
 setUseSessionTickets
+trend
 JsonTreeReader
 Strictness.Normal
-trend
 prefix
 HTTP_1_1_REQUIRED
 DELETE_TO_LINE_END
@@ -1255,13 +1266,14 @@ NONE
 address.hostAddress
 TLS_DH_anon_WITH_AES_128_CBC_SHA
 locationService
+application/json
 kotlinx.coroutines.semaphore.maxSpinC...
 ShutDown
 HÖHE
 address.hostName
 LEFT_CHAR
-sslSocketSession
 java.util.Set
+sslSocketSession
 SELECT_PAGE_DOWN
 android.os.WorkSource$WorkChain
 cacheControl
@@ -1291,8 +1303,8 @@ CONNECT
 LEAVING_HOME
 Clip
 savedStateRegistry
-NO_THREAD_ELEMENTS
 identity
+NO_THREAD_ELEMENTS
 INTERRUPTED_SEND
 Visible
 velocityVector
@@ -1306,18 +1318,19 @@ COPY
 PENDING
 androidx.profileinstaller.action.BENC...
 $this$Canvas
-client_no_context_takeover
 Tab
+client_no_context_takeover
+Anzeigen
 outState
 kotlin.
-ACTION_SET_TEXT
 java.lang.Comparable
-DstAtop
+ACTION_SET_TEXT
 first
+DstAtop
 caCerts
 UnfocusedEmpty
-Done
 BLOB
+Done
 hostLifecycleState
 Characters
 hostnameVerifier
@@ -1341,29 +1354,29 @@ offset
 Strategy.Balanced
 connectionPool
 $this$layout
-kotlin.collections.MutableList
 StopInput
+kotlin.collections.MutableList
 0123456789abcdef
 LOW_POWER
 Softlight
 SERVICE_INVALID
 sequence
+$this$navArgument
 DATA
 Haupteingang
-$this$navArgument
-androidx.core.view.inputmethod.Editor...
 Content
+androidx.core.view.inputmethod.Editor...
 file_id
-pushObserver
 INSERT
+pushObserver
 lastTriggeredAt
 replacement
-$onBackInvoked
 AndroidOwner:measureAndLayout
 ime
+$onBackInvoked
 Basic
-android.text.EmojiConsistency
 falseAlarmCount
+android.text.EmojiConsistency
 .font
 ACTION_CUT
 localRect
@@ -1373,8 +1386,8 @@ Strictness.Unspecified
 DESELECT
 org.eclipse.jetty.alpn.ALPN$Provider
 platform
-requestBodyStart
 kotlin.Byte
+requestBodyStart
 network
 bufferEnd
 public
@@ -1408,18 +1421,19 @@ year
 effectiveNodeIndexOut
 IsTraversalGroup
 androidx.activity.result.contract.ext...
-String
+AutoMirrored.Filled.ArrowBack
 SETTINGS
+String
 ExitTransition.None
-actionIntent
 resolution
+actionIntent
 newRequest
 via
 CROSSED
-Compose:sideeffects
 $this$LazyColumn
-com.google.app.id
+Compose:sideeffects
 eventListenerFactory
+com.google.app.id
 androidx.view.accessibility.Accessibi...
 WordBreak.Unspecified
 Draußen
@@ -1429,8 +1443,8 @@ VerbatimTts
 AndroidOwner:onTouch
 androidx.activity.result.contract.act...
 upgrade
-_handled
 givenName
+_handled
 STAIRS
 version
 SetSelection
@@ -1455,8 +1469,8 @@ LayingOut
 com.google.common.base.Strings
 DIRTY
 http/1.1
-http/1.0
 ContentOrLtr
+http/1.0
 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 .OpenSSLSocketImpl
 LIGHT_CHANGE
@@ -1464,12 +1478,12 @@ titleMedium
 LocalInputManager
 close
 TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA
-EmojiCompat.EmojiCompatInitializer.run
 $tables
+EmojiCompat.EmojiCompatInitializer.run
 Filled.Science
 stepCounterService
-RESULT_PARSE_EXCEPTION
 ColorDodge
+RESULT_PARSE_EXCEPTION
 Hyphens.None
 Compose:recompose
 TopRight
@@ -1477,10 +1491,12 @@ TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
 androidx.lifecycle.BundlableSavedStat...
 DEVELOPER_ERROR
 OFFICE
+Konfiguriert
 this$0
 hourOfDay
-Initial
+exit_detection_prefs
 RST_STREAM
+Initial
 Startup
 acc
 getName
@@ -1490,8 +1506,8 @@ currentDirection
 androidx.profileinstaller.action.SKIP...
 Miter
 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY130...
-addSuppressed
 okhttp.TaskRunner
+addSuppressed
 live_test/
 ACTION_SET_PROGRESS
 RESULT_OK
@@ -1513,8 +1529,8 @@ RECONNECTION_TIMED_OUT_DURING_UPDATE
 http
 error_code
 exchange
-pendingIntent
 ISO_8859_1
+pendingIntent
 stateDescription
 com.google.android.gms.dynamic.IObjec...
 textSubstitution
@@ -1570,17 +1586,17 @@ grantedScopes
 wifiBssid
 shape
 GoogleSignatureVerifier
-_rootCause
 REFUSED_STREAM
+_rootCause
 handle
-androidx.compose.ui.input.pointer.Poi...
 eventType
+androidx.compose.ui.input.pointer.Poi...
 sha1
 400
 Top
-FLOA
 404
 insertIndex
+FLOA
 RESULT_NOT_WRITABLE
 SOUTH_EAST
 etag
@@ -1601,36 +1617,37 @@ GRANULARITY_FINE
 URI
 protocolSelected
 valueVector
-androidx$room$IMultiInstanceInvalidat...
 fffe
+androidx$room$IMultiInstanceInvalidat...
 LocalViewConfiguration
 androidx.view.accessibility.Accessibi...
-server_no_context_takeover
 Strategy.Simple
-.em
+server_no_context_takeover
 kotlin.Long
+.em
 PING
 com.google.android.gms.common.api.int...
-androidx.view.accessibility.Accessibi...
 CHARACTER_PALETTE
-Style
+androidx.view.accessibility.Accessibi...
 Completing
+Style
 UPDATE
-estimatedFloor
 OUTSIDE
-authenticator
+estimatedFloor
 Width
+authenticator
+KI
 ALIGN_LEFT
 Focused
 TLS_AES_128_CCM_8_SHA256
-android.settings.APPLICATION_DETAILS_...
 _resumed
+android.settings.APPLICATION_DETAILS_...
 cacheMiss
-Text
 gzip
+Text
 sslSocket
-Lab
 requestHeadersStart
+Lab
 runningWorkers
 anchor
 Xyz
@@ -1642,8 +1659,8 @@ buildingType
 referer
 dagger.hilt.android.components.Fragme...
 ATOMIC
-UTC
 kotlin.collections.Collection
+UTC
 WEST
 modifier
 getAlpnSelectedProtocol
@@ -1651,8 +1668,8 @@ paneTitle
 body
 onLabelMeasured
 websocket
-_isCompleting
 resolvedState
+_isCompleting
 TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA
 Hyphens.Auto
 buffer
@@ -1662,15 +1679,15 @@ settings
 HTTP_1_0
 NORTH_WEST
 LICHT
-uriPathSegments
 systemGestures
 read
+uriPathSegments
 HTTP_1_1
 OpenSSLSocketImpl
 MagnifierPositionInRoot
 newInstance
-MetadataValueReader
 LocalAutofillTree
+MetadataValueReader
 com.google.android.gms.chimera
 unit
 java.util.List
@@ -1685,16 +1702,16 @@ boundary
 okio.Okio
 ctx.baseContext
 fieldName
-handleLifecycleEvent
 addNode
-Indeterminate
-%2e.
+handleLifecycleEvent
 COMPLETING_ALREADY
+%2e.
+Indeterminate
 TLS_KRB5_WITH_RC4_128_SHA
 java.lang.Iterable
 kotlinx.coroutines.DefaultExecutor.ke...
-Phone
 GRANULARITY_PERMISSION_LEVEL
+Phone
 packageName
 multipart/parallel
 Modifier
@@ -1705,14 +1722,15 @@ Keyboard
 Host
 minute
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-gcore_
 Garage
+gcore_
 paddingValues
 layout_inflater
 Main
 On
-LineHeightStyle.Alignment.Proportional
+openAIService
 reason
+LineHeightStyle.Alignment.Proportional
 auth.password
 cert
 sqLiteDatabase
@@ -1744,25 +1762,26 @@ dbObj
 targetVector
 _COROUTINE.
 Expires
+REMOVE_FROZEN
 ChannelFlow.kt
 TaskStackBuilder
-REMOVE_FROZEN
 .tmp
+OpenAIService
 _Impl
 SSL_RSA_WITH_3DES_EDE_CBC_SHA
 connectionCode
 4.12.0
 SSL_RSA_EXPORT_WITH_DES40_CBC_SHA
-android.view.accessibility.extra.DATA...
-androidx.savedstate.Restarter
 kotlinx.coroutines.semaphore.segmentSize
+androidx.savedstate.Restarter
+android.view.accessibility.extra.DATA...
 DROP_SHADER_CACHE
 cookies
 visualTransformation
 kotlin.collections.ListIterator
 default
-textSelectionColors
 waterfall
+textSelectionColors
 $this$popUpTo
 TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
 delimiters
@@ -1773,8 +1792,8 @@ SSL_RSA_WITH_RC4_128_SHA
 TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256
 outBundle
 TLS_ECDH_RSA_WITH_RC4_128_SHA
-ACTION_SELECT
 LocalSavedStateRegistryOwner
+ACTION_SELECT
 timestamp
 https://plus.google.com/
 BLOCK_INACCESSIBLE
@@ -1788,8 +1807,8 @@ NORTH_EAST
 STAYED_INSIDE
 kotlin.Char
 LOWER_CASE_WITH_UNDERSCORES
-ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
 triggerType
+ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
 Share.kt
 Sp
 SrcOver
@@ -1804,12 +1823,12 @@ java.util.ListIterator
 bodySmall
 Label
 SUCCESS_CACHE
-android.view.accessibility.extra.EXTR...
 DefaultDispatcher
+android.view.accessibility.extra.EXTR...
 kotlin.Double
 Sonstiges
-GoogleCertificates
 com.google.android.gms.location.ILoca...
+GoogleCertificates
 lifecycle
 view
 .OpenSSLSocketFactoryImpl
@@ -1837,16 +1856,16 @@ Up
 SERVICE_VERSION_UPDATE_REQUIRED
 TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
 getDescriptor
-distance
 string
+distance
 kotlin.coroutines.jvm.internal.BaseCo...
 TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256
-description
 java.lang.module.ModuleDescriptor
+description
 encodedValues
 sQLiteDatabase
-Justify
 SrcIn
+Justify
 LineThrough
 androidx.view.accessibility.Accessibi...
 statement
@@ -1854,21 +1873,21 @@ $queryInterceptorProgram
 SUSPEND_NO_WAITER
 Dispatchers.Main
 TraversalIndex
-TREAT_AS_VIEW_TREE_APPEARING
 collectionInfo
+TREAT_AS_VIEW_TREE_APPEARING
 chunked
 Cancelled
 notify_manager
 callbackName
 triggerCount
 interactionSource
-Filled.Delete
 .lck
+Filled.Delete
 GoogleApiManager
 $command
 android.intent.action.VIEW
-titleLarge
 window
+titleLarge
 $this$TextButton
 TLS_DH_anon_WITH_AES_256_GCM_SHA384
 Cancelling
@@ -1876,16 +1895,16 @@ ACTION_DISMISS
 displaySmall
 container
 MainContent
-frameCallback
 com.google.android.gms.common.interna...
+frameCallback
 M/d/yy
 logger
 _isCompleted
 .sp
 Merge.kt
 DialogRedirect
-peerName
 EmptyCoroutineContext
+peerName
 ACTION_ARGUMENT_SELECTION_END_INT
 labelMedium
 END_HEADERS
@@ -1896,8 +1915,8 @@ com.google
 gardenDirection
 kotlinx.coroutines.scheduler.core.poo...
 kotlinx.coroutines.scheduler.max.pool...
-probability
 double
+probability
 TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5
 FileSystem.SYSTEM
 Darken
@@ -1917,17 +1936,17 @@ CHAR
 onException
 networkResponse
 captionBarIgnoringVisibility
-Span
 TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256
 DELETE_FROM_LINE_START
+Span
 kotlinx.coroutines.bufferedChannel.ex...
 android.permission.ACCESS_FINE_LOCATION
 okhttp3.
 UTF_8
 android.hardware.type.watch
 TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_...
-mContentInsets
 LAZY
+mContentInsets
 resuming_sender
 defaultDns
 internalOpenHelper
@@ -1948,15 +1967,15 @@ _parentHandle
 com.google.android.gms.signin.interna...
 kotlinx.coroutines.fast.service.loader
 ScrollToIndex
-completedExpandBuffersAndPauseFlag
 EmojiCompatInitializer
+completedExpandBuffersAndPauseFlag
 kotlin.Any
 KEY_COMPONENT_ACTIVITY_REGISTERED_RCS
 backStackEntryId
 notification
 protocol
-SSL_DH_anon_EXPORT_WITH_RC4_40_MD5
 LocalLayoutDirection
+SSL_DH_anon_EXPORT_WITH_RC4_40_MD5
 com.google.android.gms.signin.interna...
 proxyAuthenticator
 _reusableCancellableContinuation
@@ -1971,15 +1990,15 @@ sensorDataJson
 package
 updateEnabledCallbacks
 FontFamily.SansSerif
-ExitDetectionApp
 actionIcons
+ExitDetectionApp
 get_last_activity_feature_id
 _consensus
 CANCELLED
 onReminderCreated
 DropdownList
-editableText
 FragmentStrictMode
+editableText
 effect
 PUSH_PROMISE
 CLOSED_EMPTY
@@ -2022,6 +2041,8 @@ rstStatusCode
 androidx.lifecycle.savedstate.vm.tag
 WindowInsetsCompat
 NETWORK_ERROR
+Filled.CheckCircle
+user
 IsPopup
 responseCallback
 getModule
@@ -2050,15 +2071,15 @@ titleSmall
 traceCounter
 canceled
 proxy
-kotlin.Unit
 kotlinx.coroutines.scheduler.resoluti...
+kotlin.Unit
 TLS_DHE_RSA_WITH_AES_128_CBC_SHA
 getType
 UNCERTAIN
-kotlinx.coroutines.flow.StartedLazily...
 kotlin.jvm.internal.StringCompanionOb...
-ContentDescription
+kotlinx.coroutines.flow.StartedLazily...
 DpOffset.Unspecified
+ContentDescription
 ACTION_CLICK
 fieldType
 common_google_play_services_resolutio...
@@ -2077,8 +2098,8 @@ TLSv1
 FALLING
 RIGHT_CHAR
 Selected
-androidx.compose.text.SpanStyle
 seq
+androidx.compose.text.SpanStyle
 completion
 androidx.view.accessibility.Accessibi...
 LINE_END
@@ -2093,11 +2114,11 @@ Löschen
 DOUB
 ACTION_NEXT_AT_MOVEMENT_GRANULARITY
 Erledigt
-android.support.PARENT_ACTIVITY
 room_fts_content_sync_
+android.support.PARENT_ACTIVITY
 db
-ReferentialEqualityPolicy
 ADD
+ReferentialEqualityPolicy
 journal.bkp
 DOWN
 SELECT_PREV_PARAGRAPH
@@ -2107,16 +2128,16 @@ NavController
 Difference
 TLS_DHE_DSS_WITH_AES_128_GCM_SHA256
 ACTION_DRAG_CANCEL
-androidx.view.accessibility.Accessibi...
 composable
+androidx.view.accessibility.Accessibi...
 Underline
 SSL_DH_anon_WITH_DES_CBC_SHA
 java.lang.reflect.InaccessibleObjectE...
 uriHost
 $this$outlineCutout
 Failed
-$this$SensorCard
 Color
+$this$SensorCard
 NonDisposableHandle
 PAGE_UP
 REMINDER_DISMISSED
@@ -2140,6 +2161,7 @@ ACTION_LONG_CLICK
 origin
 Unklar
 h2
+https://api.openai.com/v1/chat/comple...
 paramName
 content
 timeout
@@ -2154,17 +2176,17 @@ LINE_START
 false
 PROPFIND
 lightSensorService
-getDeclaredMethod
 common_google_play_services_network_e...
-Middle
-PendingWork
+getDeclaredMethod
 workerCtl
+PendingWork
+Middle
 500
 Ascii
-$query
 com.android.org.conscrypt
-TREAT_AS_VIEW_TREE_APPEARED
+$query
 realm
+TREAT_AS_VIEW_TREE_APPEARED
 ACTION_MOVE_WINDOW
 HOME
 WINDOW_UPDATE
@@ -2177,6 +2199,7 @@ TAKING_TRASH_OUT
 Image
 clipboard
 authorization
+Filled.Info
 publicSuffixExceptionListBytes
 BottomBar
 java.lang.Character
@@ -2188,8 +2211,8 @@ https
 dispatcher
 %07x
 Exit
-com.google.android.clockwork.home.UPD...
 large
+com.google.android.clockwork.home.UPD...
 $this$Layout
 index
 THROTTLE_BACKGROUND
@@ -2216,8 +2239,8 @@ Authorization
 strings
 STABLE
 bundle
-RISING
 table
+RISING
 fileSystem
 TLS_ECDHE_RSA_WITH_RC4_128_SHA
 kotlin.jvm.functions.Function
@@ -2226,11 +2249,12 @@ android.widget.ScrollView
 /data/misc/profiles/ref/
 android:text
 backStackEntry
-encodedNames
 suffix
+encodedNames
 second
 _size
 that
+high
 argName
 TLS_NULL_WITH_NULL_NULL
 MAIN
@@ -2241,14 +2265,14 @@ com.google.android.gms.location.ILoca...
 com.google.android.gms.signin.interna...
 kotlin.Number
 NULL
-nearestStreetDistance
-$this$drawWithContent
 TOO_LATE_TO_CANCEL
+$this$drawWithContent
+nearestStreetDistance
 Dst
 level
 ms
-TLS_DHE_DSS_WITH_AES_256_CBC_SHA
 BALANCED_POWER_ACCURACY
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
 TRUE
 sslSocketFactoryClass
 Range
@@ -2258,31 +2282,31 @@ entry
 multipart/mixed
 TLS_ECDH_RSA_WITH_AES_128_CBC_SHA
 focused
-onAnalysisComplete
 LINE_LEFT
+onAnalysisComplete
 $this$NavHost
 threadFactory
 TLS_ECDH_anon_WITH_NULL_SHA
 Fußweg
 SELECT_LINE_LEFT
 keys
-androidx.compose.ui.semantics.testTag
 addFontFromBuffer
-sql
-cachedResponse
+androidx.compose.ui.semantics.testTag
 com.google.android.gms.location.inter...
+cachedResponse
+sql
 head
 photoUrl
 dialog
-x509TrustManager
 SupportSQLiteLock
+x509TrustManager
 receivers
-ACTION_SCROLL_LEFT
 inParcel
+ACTION_SCROLL_LEFT
 $this$ExtendedFloatingActionButton
 HTTP/1.
-Limit.kt
 kotlin.Comparable
+Limit.kt
 Height
 backend
 groupSlotIndex
@@ -2307,8 +2331,8 @@ CLEAN
 pk
 GOING_TO_GARAGE
 Abbrechen
-EditableText
 handler
+EditableText
 metadata
 TLS_DH_anon_WITH_AES_256_CBC_SHA256
 vary
@@ -2324,20 +2348,20 @@ Overlay
 proxyAddress
 $this$SubcomposeLayout
 INTERRUPTED
-Cookie
 TextDecoration.None
+Cookie
 RSA
 ACTION_NEXT_HTML_ELEMENT
 insertReorderBarrier
 enqIdx
 invoker
 MONITORING_STARTED
-ACTION_COLLAPSE
 accept
+ACTION_COLLAPSE
 node
 Min
-CONDITION_FALSE
 RESOLUTION_ACTIVITY_NOT_FOUND
+CONDITION_FALSE
 entryPoint
 starting
 HideKeyboard
@@ -2348,21 +2372,21 @@ RESULT_CANCELED
 activity
 TLS_RSA_WITH_AES_128_GCM_SHA256
 rw
-h2_prior_knowledge
 LocalLifecycleOwner
+h2_prior_knowledge
 FHCRC
 ASC
-current
 DELETE
+current
 isUrbanArea
 ACTION_SCROLL_TO_POSITION
 $this$$receiver
 NO_ERROR
 key
 email
+kotlin.Enum.Companion
 RESOURCE
 animator_duration_scale
-kotlin.Enum.Companion
 kotlinx.coroutines.flow.StateFlowImpl
 profileinstaller_profileWrittenFor_la...
 Unbekannt
@@ -2418,8 +2442,8 @@ serviceActionBundleKey
 desc
 removeObserver
 PREV_PARAGRAPH
-destination
 changes
+destination
 ON_DESTROY
 TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384
 certificateChainCleaner
@@ -2432,21 +2456,22 @@ backing
 $this$DisposableEffect
 TLS_ECDH_anon_WITH_AES_128_CBC_SHA
 TLS_ECDH_ECDSA_WITH_NULL_SHA
-TextLayout:initLayout
 Saturation
+TextLayout:initLayout
 androidx.core.app.NotificationCompat$...
 DELETE_PREV_WORD
 Dispatchers.Main.immediate
-invalidatedTablesIds
 java.sql.Date
+invalidatedTablesIds
 getAttributionTag
 SSL_3_0
+mapCaptureService
 Compose:onRemembered
 statusBarsIgnoringVisibility
-location
 REMOVED_TASK
-FLOW_CONTROL_ERROR
+location
 SrcOut
+FLOW_CONTROL_ERROR
 Filled.Error
 $this$TopAppBar
 ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
@@ -2467,19 +2492,19 @@ connection
 cont
 cbuf
 com.exitreminder.exitdetection.presen...
-IsShowingTextSubstitution
 Finished
+IsShowingTextSubstitution
+bodyLarge
 wifi
 ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
-bodyLarge
 method
 socketFactory
 CONSUMED
 streams
 refHolder
 inetSocketAddress
-ACTION_ARGUMENT_SELECTION_START_INT
 ShowKeyboard
+ACTION_ARGUMENT_SELECTION_START_INT
 android.support.text.emoji.emojiCompa...
 TLS_KRB5_WITH_3DES_EDE_CBC_MD5
 saveableStateHolderRef
@@ -2498,8 +2523,8 @@ $this$clearAndSetSemantics
 out
 GooglePlayServicesUtil
 feature
-cached
 get
+cached
 c.columnNames
 java.lang.Number
 dagger.hilt.android.components.Activi...
@@ -2535,8 +2560,8 @@ android.permission.ACCESS_COARSE_LOCA...
 API_DISABLED
 LocalUriHandler
 Flow.kt
-com.exitreminder.exitdetection.presen...
 Inherit
+com.exitreminder.exitdetection.presen...
 EmojiCompat.FontRequestEmojiCompatCon...
 SYNCHRONIZED
 0000ffff
@@ -2545,18 +2570,18 @@ client_max_window_bits
 FOOTPATH
 %02d:%02d
 LocalHapticFeedback
-kotlin.jvm.internal.EnumCompanionObject
 TextMotion.Static
-ACTION_COPY
+kotlin.jvm.internal.EnumCompanionObject
 RESULT_UNSUPPORTED_ART_VERSION
 innerTextField
+ACTION_COPY
 Pragma
 controlState
 LineHeightStyle.Trim.Both
 2.10.1
 TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA
-cachedRequest
 Active
+cachedRequest
 android.widget.TextView
 kotlin.collections.Iterable
 navDeepLink
@@ -2581,14 +2606,14 @@ androidx.activity.result.contract.ext...
 factory
 ISIZE
 tappableElement
-LONG_OR_DOUBLE
 java.util.Iterator
+LONG_OR_DOUBLE
 focusProperties
 Fehlalarm
 Supporting
 removeIndex
-ON_STOP
 Channels.kt
+ON_STOP
 kotlin.CharSequence
 BEGIN_ARRAY
 RESULT_IO_EXCEPTION
@@ -2596,17 +2621,18 @@ intent
 onNavigateToLiveTest
 factors
 .path
+openai_api_key
 findTrustAnchorByIssuerAndSignature
 fragment
 boolean
 response
 com.google.android.wearable.app
 SrcAtop
-arguments
 Popup:
+arguments
 gson
-emit
 LocalWindowInfo
+emit
 Marking id:blocking:2131165227 used because it matches string pool constant block
 Marking string:reminder_text_hint:2131427434 used because it matches string pool constant reminder
 Marking string:direction:2131427405 used because it matches string pool constant direction

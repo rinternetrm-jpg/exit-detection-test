@@ -22,6 +22,8 @@ import com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestView
 import com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel;
 import com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.exitreminder.exitdetection.presentation.screens.settings.SettingsViewModel;
+import com.exitreminder.exitdetection.presentation.screens.settings.SettingsViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.exitreminder.exitdetection.receiver.BootReceiver;
 import com.exitreminder.exitdetection.receiver.BootReceiver_MembersInjector;
 import com.exitreminder.exitdetection.receiver.ReminderActionReceiver;
@@ -32,6 +34,8 @@ import com.exitreminder.exitdetection.service.ExitMonitorService_MembersInjector
 import com.exitreminder.exitdetection.service.ExitPredictor;
 import com.exitreminder.exitdetection.service.LightSensorService;
 import com.exitreminder.exitdetection.service.LocationService;
+import com.exitreminder.exitdetection.service.MapCaptureService;
+import com.exitreminder.exitdetection.service.OpenAIService;
 import com.exitreminder.exitdetection.service.StepCounterService;
 import com.exitreminder.exitdetection.service.WifiService;
 import com.google.gson.Gson;
@@ -401,7 +405,7 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(4).add(AnalysisViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(HomeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(LiveTestViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ReminderConfigViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(5).add(AnalysisViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(HomeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(LiveTestViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ReminderConfigViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -437,6 +441,8 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
 
     private Provider<ReminderConfigViewModel> reminderConfigViewModelProvider;
 
+    private Provider<SettingsViewModel> settingsViewModelProvider;
+
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
         ViewModelLifecycle viewModelLifecycleParam) {
@@ -454,11 +460,12 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
       this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.liveTestViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.reminderConfigViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
+      this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(4).put("com.exitreminder.exitdetection.presentation.screens.analysis.AnalysisViewModel", ((Provider) analysisViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.home.HomeViewModel", ((Provider) homeViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestViewModel", ((Provider) liveTestViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel", ((Provider) reminderConfigViewModelProvider)).build();
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(5).put("com.exitreminder.exitdetection.presentation.screens.analysis.AnalysisViewModel", ((Provider) analysisViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.home.HomeViewModel", ((Provider) homeViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestViewModel", ((Provider) liveTestViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel", ((Provider) reminderConfigViewModelProvider)).put("com.exitreminder.exitdetection.presentation.screens.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -483,7 +490,7 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
       public T get() {
         switch (id) {
           case 0: // com.exitreminder.exitdetection.presentation.screens.analysis.AnalysisViewModel 
-          return (T) new AnalysisViewModel(singletonCImpl.wifiServiceProvider.get(), singletonCImpl.locationServiceProvider.get(), singletonCImpl.barometerServiceProvider.get());
+          return (T) new AnalysisViewModel(singletonCImpl.wifiServiceProvider.get(), singletonCImpl.locationServiceProvider.get(), singletonCImpl.barometerServiceProvider.get(), singletonCImpl.openAIServiceProvider.get(), singletonCImpl.mapCaptureServiceProvider.get());
 
           case 1: // com.exitreminder.exitdetection.presentation.screens.home.HomeViewModel 
           return (T) new HomeViewModel(singletonCImpl.provideExitRepositoryProvider.get(), singletonCImpl.wifiServiceProvider.get());
@@ -493,6 +500,9 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
 
           case 3: // com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigViewModel 
           return (T) new ReminderConfigViewModel(singletonCImpl.provideExitRepositoryProvider.get(), singletonCImpl.wifiServiceProvider.get(), singletonCImpl.locationServiceProvider.get(), viewModelCImpl.savedStateHandle);
+
+          case 4: // com.exitreminder.exitdetection.presentation.screens.settings.SettingsViewModel 
+          return (T) new SettingsViewModel(singletonCImpl.openAIServiceProvider.get());
 
           default: throw new AssertionError(id);
         }
@@ -603,6 +613,10 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
 
     private Provider<BarometerService> barometerServiceProvider;
 
+    private Provider<OpenAIService> openAIServiceProvider;
+
+    private Provider<MapCaptureService> mapCaptureServiceProvider;
+
     private Provider<StepCounterService> stepCounterServiceProvider;
 
     private Provider<LightSensorService> lightSensorServiceProvider;
@@ -624,9 +638,11 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
       this.wifiServiceProvider = DoubleCheck.provider(new SwitchingProvider<WifiService>(singletonCImpl, 4));
       this.locationServiceProvider = DoubleCheck.provider(new SwitchingProvider<LocationService>(singletonCImpl, 5));
       this.barometerServiceProvider = DoubleCheck.provider(new SwitchingProvider<BarometerService>(singletonCImpl, 6));
-      this.stepCounterServiceProvider = DoubleCheck.provider(new SwitchingProvider<StepCounterService>(singletonCImpl, 7));
-      this.lightSensorServiceProvider = DoubleCheck.provider(new SwitchingProvider<LightSensorService>(singletonCImpl, 8));
-      this.exitPredictorProvider = DoubleCheck.provider(new SwitchingProvider<ExitPredictor>(singletonCImpl, 9));
+      this.openAIServiceProvider = DoubleCheck.provider(new SwitchingProvider<OpenAIService>(singletonCImpl, 7));
+      this.mapCaptureServiceProvider = DoubleCheck.provider(new SwitchingProvider<MapCaptureService>(singletonCImpl, 8));
+      this.stepCounterServiceProvider = DoubleCheck.provider(new SwitchingProvider<StepCounterService>(singletonCImpl, 9));
+      this.lightSensorServiceProvider = DoubleCheck.provider(new SwitchingProvider<LightSensorService>(singletonCImpl, 10));
+      this.exitPredictorProvider = DoubleCheck.provider(new SwitchingProvider<ExitPredictor>(singletonCImpl, 11));
     }
 
     @Override
@@ -703,13 +719,19 @@ public final class DaggerExitDetectionApp_HiltComponents_SingletonC {
           case 6: // com.exitreminder.exitdetection.service.BarometerService 
           return (T) new BarometerService(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 7: // com.exitreminder.exitdetection.service.StepCounterService 
+          case 7: // com.exitreminder.exitdetection.service.OpenAIService 
+          return (T) new OpenAIService(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideGsonProvider.get());
+
+          case 8: // com.exitreminder.exitdetection.service.MapCaptureService 
+          return (T) new MapCaptureService(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 9: // com.exitreminder.exitdetection.service.StepCounterService 
           return (T) new StepCounterService(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 8: // com.exitreminder.exitdetection.service.LightSensorService 
+          case 10: // com.exitreminder.exitdetection.service.LightSensorService 
           return (T) new LightSensorService(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 9: // com.exitreminder.exitdetection.service.ExitPredictor 
+          case 11: // com.exitreminder.exitdetection.service.ExitPredictor 
           return (T) new ExitPredictor();
 
           default: throw new AssertionError(id);

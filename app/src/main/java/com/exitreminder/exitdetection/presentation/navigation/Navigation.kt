@@ -11,6 +11,7 @@ import com.exitreminder.exitdetection.presentation.screens.home.HomeScreen
 import com.exitreminder.exitdetection.presentation.screens.analysis.AnalysisScreen
 import com.exitreminder.exitdetection.presentation.screens.reminder.ReminderConfigScreen
 import com.exitreminder.exitdetection.presentation.screens.livetest.LiveTestScreen
+import com.exitreminder.exitdetection.presentation.screens.settings.SettingsScreen
 
 object Routes {
     const val HOME = "home"
@@ -84,11 +85,8 @@ fun ExitDetectionNavHost(
         }
 
         composable(Routes.SETTINGS) {
-            // Settings placeholder
-            HomeScreen(
-                onNavigateToNewReminder = {},
-                onNavigateToLiveTest = {},
-                onNavigateToSettings = {}
+            SettingsScreen(
+                onNavigateBack = { navController.popBackStack() }
             )
         }
     }

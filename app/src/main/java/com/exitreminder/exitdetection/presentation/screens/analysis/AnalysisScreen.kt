@@ -1,6 +1,5 @@
 package com.exitreminder.exitdetection.presentation.screens.analysis
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -9,8 +8,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -22,15 +19,18 @@ import com.exitreminder.exitdetection.presentation.theme.*
 fun AnalysisScreen(
     onNavigateBack: () -> Unit,
     onAnalysisComplete: (Long) -> Unit,
+    onNavigateToSettings: (() -> Unit)? = null,
     viewModel: AnalysisViewModel = hiltViewModel()
 ) {
     val analysis by viewModel.analysis.collectAsState()
     val error by viewModel.error.collectAsState()
+    val needsApiKey by viewModel.needsApiKey.collectAsState()
 
     LaunchedEffect(analysis.isComplete) {
         if (analysis.isComplete && analysis.profile != null) {
-            // Navigate to reminder config with profile ID
-            // For now, we'll stay on this screen
+            // Auto-navigate to reminder config after 1 second
+            kotlinx.coroutines.delay(1000)
+            onAnalysisComplete(analysis.profile?.id ?: 0)
         }
     }
 
@@ -78,8 +78,60 @@ fun AnalysisScreen(
                 Spacer(modifier = Modifier.height(48.dp))
             }
 
+            // Success indicator
+            if (analysis.isComplete) {
+                Text(
+                    text = "✅",
+                    fontSize = 48.sp
+                )
+
+                Spacer(modifier = Modifier.height(24.dp))
+
+                Text(
+                    text = "Analyse abgeschlossen!",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = StatusHome
+                )
+
+                Spacer(modifier = Modifier.height(48.dp))
+            }
+
             // Analysis steps
-            AnalysisSteps(analysis = analysis)
+            AnalysisSteps(analysis = analysis, needsApiKey = needsApiKey)
+
+            // API Key hint
+            if (needsApiKey) {
+                Spacer(modifier = Modifier.height(16.dp))
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = StatusUncertain.copy(alpha = 0.2f)),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp)
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                Icons.Default.Info,
+                                null,
+                                tint = StatusUncertain
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = "Ohne OpenAI API Key",
+                                style = MaterialTheme.typography.titleSmall,
+                                color = StatusUncertain
+                            )
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = "Die KI-Kartenanalyse ist deaktiviert. Gehe in die Einstellungen um einen API Key zu hinterlegen für genauere Exit-Erkennung.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
+                    }
+                }
+            }
 
             Spacer(modifier = Modifier.weight(1f))
 
@@ -119,7 +171,7 @@ fun AnalysisScreen(
             // Complete message
             if (analysis.isComplete) {
                 Text(
-                    text = "Bitte warten (ca. 5 Sek)",
+                    text = "Weiter zur Konfiguration...",
                     style = MaterialTheme.typography.bodyMedium,
                     color = TextSecondary
                 )
@@ -129,7 +181,7 @@ fun AnalysisScreen(
 }
 
 @Composable
-private fun AnalysisSteps(analysis: LocationAnalysis) {
+private fun AnalysisSteps(analysis: LocationAnalysis, needsApiKey: Boolean) {
     Card(
         modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = Surface),
@@ -158,9 +210,19 @@ private fun AnalysisSteps(analysis: LocationAnalysis) {
             )
 
             AnalysisStep(
-                icon = if (analysis.aiAnalysisComplete) "✅" else if (analysis.currentStep.contains("Analyse")) "⏳" else "○",
-                text = if (analysis.aiAnalysisComplete) "Umgebung analysiert" else "Analysiere Umgebung...",
-                isComplete = analysis.aiAnalysisComplete
+                icon = when {
+                    analysis.aiAnalysisComplete -> "✅"
+                    needsApiKey -> "⚠️"
+                    analysis.currentStep.contains("KI") || analysis.currentStep.contains("Analyse") -> "⏳"
+                    else -> "○"
+                },
+                text = when {
+                    analysis.aiAnalysisComplete -> "KI-Analyse abgeschlossen"
+                    needsApiKey -> "KI-Analyse übersprungen (kein API Key)"
+                    else -> "Analysiere mit GPT-4 Vision..."
+                },
+                isComplete = analysis.aiAnalysisComplete,
+                isWarning = needsApiKey
             )
 
             AnalysisStep(
@@ -176,7 +238,8 @@ private fun AnalysisSteps(analysis: LocationAnalysis) {
 private fun AnalysisStep(
     icon: String,
     text: String,
-    isComplete: Boolean
+    isComplete: Boolean,
+    isWarning: Boolean = false
 ) {
     Row(
         verticalAlignment = Alignment.CenterVertically
@@ -189,7 +252,11 @@ private fun AnalysisStep(
         Text(
             text = text,
             style = MaterialTheme.typography.bodyMedium,
-            color = if (isComplete) StatusHome else TextSecondary
+            color = when {
+                isComplete -> StatusHome
+                isWarning -> StatusUncertain
+                else -> TextSecondary
+            }
         )
     }
 }
