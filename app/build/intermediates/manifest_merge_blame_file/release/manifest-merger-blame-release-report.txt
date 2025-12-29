@@ -1,0 +1,236 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.exitreminder.exitdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:5:5-79
+12-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:6:5-81
+13-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:7:5-85
+14-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:7:22-82
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:8:5-76
+15-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+16-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:9:5-76
+16-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:9:22-73
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:10:5-79
+17-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:10:22-76
+18    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+18-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:11:5-79
+18-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:12:5-67
+19-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:12:22-64
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+20-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:13:5-77
+20-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:13:22-74
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+21-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:14:5-86
+21-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:14:22-83
+22    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+22-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:15:5-77
+22-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:15:22-74
+23    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+23-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:16:5-81
+23-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:16:22-78
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:17:5-68
+24-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:17:22-65
+25
+26    <!-- For WLAN scanning on Android 13+ -->
+27    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+27-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:20:5-78
+27-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:20:22-75
+28
+29    <permission
+29-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+30        android:name="com.exitreminder.exitdetection.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.exitreminder.exitdetection.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:22:5-63:19
+36        android:name="com.exitreminder.exitdetection.ExitDetectionApp"
+36-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:23:9-41
+37        android:allowBackup="true"
+37-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:24:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/696189f0ab63a54e8c92b05cd8ced775/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+39        android:extractNativeLibs="false"
+40        android:icon="@mipmap/ic_launcher"
+40-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:25:9-43
+41        android:label="Exit Detection"
+41-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:26:9-39
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:27:9-54
+43        android:supportsRtl="true"
+43-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:28:9-35
+44        android:theme="@style/Theme.ExitDetection" >
+44-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:29:9-51
+45        <activity
+45-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:31:9-39:20
+46            android:name="com.exitreminder.exitdetection.MainActivity"
+46-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:32:13-41
+47            android:exported="true"
+47-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:33:13-36
+48            android:theme="@style/Theme.ExitDetection" >
+48-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:34:13-55
+49            <intent-filter>
+49-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:35:13-38:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:36:17-69
+50-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:36:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:37:17-77
+52-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:37:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <!-- Exit Monitoring Service -->
+57        <service
+57-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:42:9-45:56
+58            android:name="com.exitreminder.exitdetection.service.ExitMonitorService"
+58-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:43:13-55
+59            android:exported="false"
+59-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:44:13-37
+60            android:foregroundServiceType="location" />
+60-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:45:13-53
+61
+62        <!-- Boot Receiver to restart service -->
+63        <receiver
+63-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:48:9-55:20
+64            android:name="com.exitreminder.exitdetection.receiver.BootReceiver"
+64-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:49:13-50
+65            android:enabled="true"
+65-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:50:13-35
+66            android:exported="true" >
+66-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:51:13-36
+67            <intent-filter>
+67-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:52:13-54:29
+68                <action android:name="android.intent.action.BOOT_COMPLETED" />
+68-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:53:17-79
+68-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:53:25-76
+69            </intent-filter>
+70        </receiver>
+71
+72        <!-- Reminder Action Receiver for notification actions -->
+73        <receiver
+73-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:58:9-61:40
+74            android:name="com.exitreminder.exitdetection.receiver.ReminderActionReceiver"
+74-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:59:13-60
+75            android:enabled="true"
+75-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:60:13-35
+76            android:exported="false" />
+76-->/opt/exit-detection-test/app/src/main/AndroidManifest.xml:61:13-37
+77
+78        <activity
+78-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-3/64fdb2b52567086908948a36f211c80a/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+79-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-3/64fdb2b52567086908948a36f211c80a/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+80            android:exported="false"
+80-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-3/64fdb2b52567086908948a36f211c80a/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+81-->[com.google.android.gms:play-services-base:18.1.0] /root/.gradle/caches/transforms-3/64fdb2b52567086908948a36f211c80a/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+82
+83        <provider
+83-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+84            android:name="androidx.startup.InitializationProvider"
+84-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+85            android:authorities="com.exitreminder.exitdetection.androidx-startup"
+85-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+86            android:exported="false" >
+86-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+87            <meta-data
+87-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+88-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+89                android:value="androidx.startup" />
+89-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-3/903007aaf932d530976840279ab228a4/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+90            <meta-data
+90-->[androidx.lifecycle:lifecycle-process:2.7.0] /root/.gradle/caches/transforms-3/0aab898fc957f63b656925bcd3208108/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+91-->[androidx.lifecycle:lifecycle-process:2.7.0] /root/.gradle/caches/transforms-3/0aab898fc957f63b656925bcd3208108/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+92                android:value="androidx.startup" />
+92-->[androidx.lifecycle:lifecycle-process:2.7.0] /root/.gradle/caches/transforms-3/0aab898fc957f63b656925bcd3208108/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+93            <meta-data
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+94                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+95                android:value="androidx.startup" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+96        </provider>
+97
+98        <service
+98-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-3/afcdd2103284cf5a823bc9742de30658/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+99            android:name="androidx.room.MultiInstanceInvalidationService"
+99-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-3/afcdd2103284cf5a823bc9742de30658/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+100            android:directBootAware="true"
+100-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-3/afcdd2103284cf5a823bc9742de30658/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+101            android:exported="false" />
+101-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-3/afcdd2103284cf5a823bc9742de30658/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+102
+103        <meta-data
+103-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-3/ae231a44336338f13aee1c0354790f79/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+104            android:name="com.google.android.gms.version"
+104-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-3/ae231a44336338f13aee1c0354790f79/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+105            android:value="@integer/google_play_services_version" />
+105-->[com.google.android.gms:play-services-basement:18.1.0] /root/.gradle/caches/transforms-3/ae231a44336338f13aee1c0354790f79/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+106
+107        <receiver
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+108            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+109            android:directBootAware="false"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+110            android:enabled="true"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+111            android:exported="true"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+112            android:permission="android.permission.DUMP" >
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+114                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+117                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+120                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+123                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-3/ff646cca684efb6b1790d848e02f0ea0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+124            </intent-filter>
+125        </receiver>
+126    </application>
+127
+128</manifest>

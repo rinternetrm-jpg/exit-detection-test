@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#007AFF</color>
+    <color name="primary_variant">#0056CC</color>
+    <color name="secondary">#5856D6</color>
+
+    <!-- Background Colors -->
+    <color name="background">#000000</color>
+    <color name="surface">#1C1C1E</color>
+    <color name="surface_light">#2C2C2E</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8E8E93</color>
+
+    <!-- Status Colors -->
+    <color name="status_home">#34C759</color>
+    <color name="status_leaving">#FF9500</color>
+    <color name="status_outside">#FF3B30</color>
+
+    <!-- Signal Colors -->
+    <color name="signal_excellent">#34C759</color>
+    <color name="signal_good">#30D158</color>
+    <color name="signal_fair">#FFD60A</color>
+    <color name="signal_weak">#FF9500</color>
+    <color name="signal_poor">#FF3B30</color>
+</resources>

@@ -1,0 +1,10 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.exitreminder.exitdetection.ExitDetectionApp { <init>(); }
+-keep class com.exitreminder.exitdetection.MainActivity { <init>(); }
+-keep class com.exitreminder.exitdetection.receiver.BootReceiver { <init>(); }
+-keep class com.exitreminder.exitdetection.receiver.ReminderActionReceiver { <init>(); }
+-keep class com.exitreminder.exitdetection.service.ExitMonitorService { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }

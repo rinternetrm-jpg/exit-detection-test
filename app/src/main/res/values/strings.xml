@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exit Detection Test</string>
+
+    <!-- Common -->
+    <string name="back">Zurück</string>
+    <string name="close">Schließen</string>
+    <string name="save">Speichern</string>
+    <string name="delete">Löschen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="ok">OK</string>
+
+    <!-- Home Screen -->
+    <string name="no_reminders_title">Noch keine Reminder</string>
+    <string name="no_reminders_subtitle">Tippe auf + um deinen ersten Exit-Reminder zu erstellen</string>
+    <string name="add_reminder">Reminder hinzufügen</string>
+
+    <!-- Analysis Screen -->
+    <string name="analyzing">Analysiere Standort...</string>
+    <string name="scanning_wifi">Scanne WLAN...</string>
+    <string name="getting_gps">Ermittle GPS Position...</string>
+    <string name="analyzing_map">Analysiere Karte mit KI...</string>
+
+    <!-- Reminder Config -->
+    <string name="new_reminder">Neuer Reminder</string>
+    <string name="location_detected">Standort erkannt</string>
+    <string name="location_name_hint">z.B. Zuhause</string>
+    <string name="reminder_text_hint">z.B. Hast du Schlüssel und Geldbeutel dabei?</string>
+    <string name="create_reminder">Reminder erstellen</string>
+
+    <!-- Live Test -->
+    <string name="live_test">Live-Test</string>
+    <string name="recording">REC</string>
+    <string name="exit_prediction">Exit Prediction</string>
+
+    <!-- Sensors -->
+    <string name="wifi">WLAN</string>
+    <string name="position">Position</string>
+    <string name="movement">Bewegung</string>
+    <string name="altitude">Höhe</string>
+    <string name="light">Licht</string>
+    <string name="direction">Richtung</string>
+
+    <!-- Status -->
+    <string name="status_home">Zuhause</string>
+    <string name="status_moving">In Bewegung</string>
+    <string name="status_leaving">Verlässt Gebäude</string>
+    <string name="status_outside">Draußen</string>
+
+    <!-- Notifications -->
+    <string name="notification_monitoring_title">Exit Detection aktiv</string>
+    <string name="notification_monitoring_text">Überwache %d Reminder</string>
+    <string name="notification_exit_title">Exit erkannt!</string>
+
+    <!-- Permissions -->
+    <string name="permissions_required">Berechtigungen werden für Exit Detection benötigt</string>
+</resources>
