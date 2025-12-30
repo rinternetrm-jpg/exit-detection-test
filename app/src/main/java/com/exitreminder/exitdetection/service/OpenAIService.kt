@@ -120,16 +120,16 @@ Antworte NUR mit einem validen JSON-Objekt, ohne zusätzlichen Text:
   "estimatedFloor": 0,
   "totalFloors": 1,
   "hasGarden": true/false,
-  "gardenDirection": "NORTH|SOUTH|EAST|WEST|NORTHEAST|NORTHWEST|SOUTHEAST|SOUTHWEST|null",
+  "gardenDirection": "NORTH|SOUTH|EAST|WEST|NORTH_EAST|NORTH_WEST|SOUTH_EAST|SOUTH_WEST|null",
   "nearestStreetName": "Straßenname",
   "nearestStreetDistance": 15,
-  "nearestStreetDirection": "NORTH|SOUTH|EAST|WEST|NORTHEAST|NORTHWEST|SOUTHEAST|SOUTHWEST",
-  "streetType": "RESIDENTIAL|MAIN_ROAD|HIGHWAY|PEDESTRIAN|PATH",
+  "nearestStreetDirection": "NORTH|SOUTH|EAST|WEST|NORTH_EAST|NORTH_WEST|SOUTH_EAST|SOUTH_WEST",
+  "streetType": "RESIDENTIAL|MAIN|FOOTPATH|HIGHWAY",
   "possibleExits": [
     {
       "name": "Haupteingang",
       "type": "MAIN_ENTRANCE|SIDE_DOOR|GARAGE|GARDEN_GATE|BACK_DOOR|EMERGENCY_EXIT",
-      "direction": "NORTH|SOUTH|EAST|WEST|...",
+      "direction": "NORTH|SOUTH|EAST|WEST|NORTH_EAST|NORTH_WEST|SOUTH_EAST|SOUTH_WEST",
       "estimatedDistance": 5,
       "leadsTo": "STREET|GARDEN|GARAGE|COURTYARD|PARKING"
     }

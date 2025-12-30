@@ -55,6 +55,9 @@ enum class BuildingType(val emoji: String, val displayName: String) {
     OFFICE_COMPLEX("🏙️", "Bürokomplex"),
     HIGHRISE("🏬", "Hochhaus"),
     SHOPPING("🛒", "Einkaufszentrum"),
+    HOSPITAL("🏥", "Krankenhaus"),
+    SCHOOL("🏫", "Schule"),
+    OTHER("❓", "Sonstiges"),
     UNKNOWN("❓", "Unbekannt")
 }
 
@@ -100,9 +103,13 @@ data class ExitPoint(
 )
 
 enum class ExitType(val emoji: String, val displayName: String) {
+    MAIN_ENTRANCE("🚪", "Haupteingang"),
     MAIN_DOOR("🚪", "Haupteingang"),
     SIDE_DOOR("🚪", "Nebeneingang"),
     GARAGE("🚗", "Garage"),
+    GARDEN_GATE("🌳", "Gartentor"),
+    BACK_DOOR("🚪", "Hintertür"),
+    EMERGENCY_EXIT("🚨", "Notausgang"),
     EMERGENCY("🚨", "Notausgang"),
     ELEVATOR("🛗", "Aufzug"),
     STAIRS("🪜", "Treppe")
