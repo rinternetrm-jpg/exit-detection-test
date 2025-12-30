@@ -1,7 +1,6 @@
 package com.exitreminder.exitdetection.presentation.screens.home
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -49,16 +48,14 @@ fun HomeScreen(
             )
         },
         floatingActionButton = {
-            if (reminders.isNotEmpty()) {
-                ExtendedFloatingActionButton(
-                    onClick = onNavigateToNewReminder,
-                    containerColor = Primary,
-                    contentColor = TextPrimary
-                ) {
-                    Icon(Icons.Default.Add, null)
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text("Neuer Reminder")
-                }
+            ExtendedFloatingActionButton(
+                onClick = onNavigateToNewReminder,
+                containerColor = Primary,
+                contentColor = TextPrimary
+            ) {
+                Icon(Icons.Default.Add, null)
+                Spacer(modifier = Modifier.width(8.dp))
+                Text("Neuer Reminder")
             }
         },
         containerColor = Background
@@ -73,7 +70,6 @@ fun HomeScreen(
                 CircularProgressIndicator(color = Primary)
             }
         } else if (reminders.isEmpty()) {
-            // Empty state
             EmptyState(
                 onCreateReminder = onNavigateToNewReminder,
                 modifier = Modifier
@@ -81,7 +77,6 @@ fun HomeScreen(
                     .padding(padding)
             )
         } else {
-            // Reminder list
             LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()
@@ -130,7 +125,7 @@ private fun EmptyState(
         Spacer(modifier = Modifier.height(24.dp))
 
         Text(
-            text = "Du hast noch keine\nWLAN-Reminder erstellt.",
+            text = "Noch keine Reminder",
             style = MaterialTheme.typography.headlineSmall,
             color = TextPrimary,
             textAlign = TextAlign.Center
@@ -158,7 +153,7 @@ private fun EmptyState(
         ) {
             Icon(Icons.Default.Add, null)
             Spacer(modifier = Modifier.width(8.dp))
-            Text("NEUER WLAN-REMINDER", style = MaterialTheme.typography.titleMedium)
+            Text("NEUER REMINDER", style = MaterialTheme.typography.titleMedium)
         }
     }
 }
@@ -181,7 +176,6 @@ private fun ReminderCard(
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
-            // Header
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
@@ -201,7 +195,6 @@ private fun ReminderCard(
                     )
                 }
 
-                // Active badge
                 Box(
                     modifier = Modifier
                         .clip(RoundedCornerShape(8.dp))
@@ -218,91 +211,18 @@ private fun ReminderCard(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // Info line
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Icon(
-                    Icons.Default.Wifi,
-                    null,
-                    tint = TextSecondary,
-                    modifier = Modifier.size(16.dp)
-                )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Default.Wifi, null, tint = TextSecondary, modifier = Modifier.size(16.dp))
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(
-                    text = reminder.profile.wifiSsid,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary
-                )
-
-                Spacer(modifier = Modifier.width(16.dp))
-
-                Icon(
-                    Icons.Default.LocationOn,
-                    null,
-                    tint = TextSecondary,
-                    modifier = Modifier.size(16.dp)
-                )
-                Spacer(modifier = Modifier.width(4.dp))
-                Text(
-                    text = reminder.profile.nearestStreetName.ifEmpty { "Unbekannt" },
-                    style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary
-                )
+                Text(text = reminder.profile.wifiSsid, style = MaterialTheme.typography.bodySmall, color = TextSecondary)
             }
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Reminder text
-            Row(
-                verticalAlignment = Alignment.Top
-            ) {
-                Text(
-                    text = "💬",
-                    fontSize = 16.sp
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-                Text(
-                    text = "\"${reminder.reminderText}\"",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = TextPrimary
-                )
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            // Status
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(8.dp))
-                    .background(SurfaceLight)
-                    .padding(12.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                if (isAtLocation) {
-                    Text(
-                        text = "Status: 🏠 Du bist hier",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = StatusHome
-                    )
-                } else {
-                    Text(
-                        text = "Status: 📍 Du bist woanders",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = TextSecondary
-                    )
-                }
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            // Action buttons
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                // Live Test button
                 OutlinedButton(
                     onClick = onLiveTestClick,
                     modifier = Modifier.weight(1f),
@@ -313,10 +233,7 @@ private fun ReminderCard(
                     Text("Live-Test")
                 }
 
-                // Toggle active
-                IconButton(
-                    onClick = { onToggleActive(!reminder.isActive) }
-                ) {
+                IconButton(onClick = { onToggleActive(!reminder.isActive) }) {
                     Icon(
                         if (reminder.isActive) Icons.Default.Pause else Icons.Default.PlayArrow,
                         contentDescription = if (reminder.isActive) "Pausieren" else "Aktivieren",
@@ -324,33 +241,20 @@ private fun ReminderCard(
                     )
                 }
 
-                // Delete
-                IconButton(
-                    onClick = { showDeleteDialog = true }
-                ) {
-                    Icon(
-                        Icons.Default.Delete,
-                        contentDescription = "Löschen",
-                        tint = StatusOutside
-                    )
+                IconButton(onClick = { showDeleteDialog = true }) {
+                    Icon(Icons.Default.Delete, contentDescription = "Löschen", tint = StatusOutside)
                 }
             }
         }
     }
 
-    // Delete confirmation dialog
     if (showDeleteDialog) {
         AlertDialog(
             onDismissRequest = { showDeleteDialog = false },
             title = { Text("Reminder löschen?") },
             text = { Text("Möchtest du \"${reminder.name}\" wirklich löschen?") },
             confirmButton = {
-                TextButton(
-                    onClick = {
-                        onDelete()
-                        showDeleteDialog = false
-                    }
-                ) {
+                TextButton(onClick = { onDelete(); showDeleteDialog = false }) {
                     Text("Löschen", color = StatusOutside)
                 }
             },

@@ -31,10 +31,13 @@ class HomeViewModel @Inject constructor(
     val currentWifiSsid: StateFlow<String?> = _currentWifiSsid.asStateFlow()
 
     init {
-        Log.d(TAG, "HomeViewModel init started")
-        loadReminders()
-        updateWifiState()
-        Log.d(TAG, "HomeViewModel init completed")
+        Log.d(TAG, "HomeViewModel init - VOLLVERSION")
+        try {
+            loadReminders()
+            updateWifiState()
+        } catch (e: Exception) {
+            Log.e(TAG, "Error in init", e)
+        }
     }
 
     private fun loadReminders() {
