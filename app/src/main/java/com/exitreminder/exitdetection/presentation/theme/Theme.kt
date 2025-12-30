@@ -67,9 +67,14 @@ fun ExitDetectionTheme(
 
     if (!view.isInEditMode) {
         SideEffect {
-            val window = (view.context as Activity).window
-            window.statusBarColor = Background.toArgb()
-            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
+            try {
+                (view.context as? Activity)?.let { activity ->
+                    activity.window.statusBarColor = Background.toArgb()
+                    WindowCompat.getInsetsController(activity.window, view).isAppearanceLightStatusBars = false
+                }
+            } catch (e: Exception) {
+                // Ignore - status bar color is just cosmetic
+            }
         }
     }
 
