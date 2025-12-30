@@ -4,13 +4,17 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.core.content.ContextCompat
 import com.exitreminder.exitdetection.presentation.navigation.ExitDetectionNavHost
@@ -19,6 +23,10 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    companion object {
+        private const val TAG = "MainActivity"
+    }
 
     private val requiredPermissions = buildList {
         add(Manifest.permission.ACCESS_FINE_LOCATION)
@@ -35,20 +43,29 @@ class MainActivity : ComponentActivity() {
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
-        val allGranted = permissions.all { it.value }
-        if (!allGranted) {
-            Toast.makeText(
-                this,
-                "Berechtigungen werden für Exit Detection benötigt",
-                Toast.LENGTH_LONG
-            ).show()
+        try {
+            val allGranted = permissions.all { it.value }
+            if (!allGranted) {
+                Toast.makeText(
+                    this,
+                    "Berechtigungen werden für Exit Detection benötigt",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error in permission callback", e)
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate started")
 
-        checkAndRequestPermissions()
+        try {
+            checkAndRequestPermissions()
+        } catch (e: Exception) {
+            Log.e(TAG, "Error checking permissions", e)
+        }
 
         setContent {
             ExitDetectionTheme {
@@ -60,15 +77,20 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        Log.d(TAG, "setContent completed")
     }
 
     private fun checkAndRequestPermissions() {
-        val permissionsToRequest = requiredPermissions.filter {
-            ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
-        }
+        try {
+            val permissionsToRequest = requiredPermissions.filter {
+                ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
+            }
 
-        if (permissionsToRequest.isNotEmpty()) {
-            permissionLauncher.launch(permissionsToRequest.toTypedArray())
+            if (permissionsToRequest.isNotEmpty()) {
+                permissionLauncher.launch(permissionsToRequest.toTypedArray())
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error requesting permissions", e)
         }
     }
 }
