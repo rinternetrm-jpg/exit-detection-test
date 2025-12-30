@@ -25,7 +25,11 @@ import kotlin.math.*
 class WifiService @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val wifiManager = context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+    private val wifiManager: WifiManager? = try {
+        context.applicationContext.getSystemService(Context.WIFI_SERVICE) as? WifiManager
+    } catch (e: Exception) {
+        null
+    }
 
     private val _wifiState = MutableStateFlow(WifiState())
     val wifiState: StateFlow<WifiState> = _wifiState.asStateFlow()
@@ -33,34 +37,43 @@ class WifiService @Inject constructor(
     private var previousSignal: Int = -100
 
     fun updateWifiState() {
-        val info = wifiManager.connectionInfo
-        val isConnected = info != null && info.networkId != -1
-        val ssid = if (isConnected) info.ssid?.removeSurrounding("\"") ?: "" else ""
-        val bssid = if (isConnected) info.bssid ?: "" else ""
-        val rssi = if (isConnected) info.rssi else -100
+        try {
+            val info = wifiManager?.connectionInfo
+            val isConnected = info != null && info.networkId != -1
+            val ssid = if (isConnected) info?.ssid?.removeSurrounding("\"") ?: "" else ""
+            val bssid = if (isConnected) info?.bssid ?: "" else ""
+            val rssi = if (isConnected) info?.rssi ?: -100 else -100
 
-        val trend = when {
-            rssi > previousSignal + 3 -> Trend.RISING
-            rssi < previousSignal - 3 -> Trend.FALLING
-            else -> Trend.STABLE
+            val trend = when {
+                rssi > previousSignal + 3 -> Trend.RISING
+                rssi < previousSignal - 3 -> Trend.FALLING
+                else -> Trend.STABLE
+            }
+            previousSignal = rssi
+
+            _wifiState.value = WifiState(
+                isConnected = isConnected,
+                ssid = ssid,
+                bssid = bssid,
+                rssi = rssi,
+                signalPercent = LiveSensorData.dbmToPercent(rssi),
+                trend = trend
+            )
+        } catch (e: Exception) {
+            // Permission not granted or other error
+            _wifiState.value = WifiState()
         }
-        previousSignal = rssi
-
-        _wifiState.value = WifiState(
-            isConnected = isConnected,
-            ssid = ssid,
-            bssid = bssid,
-            rssi = rssi,
-            signalPercent = LiveSensorData.dbmToPercent(rssi),
-            trend = trend
-        )
     }
 
     fun getCurrentSsid(): String? {
-        val info = wifiManager.connectionInfo
-        return if (info?.networkId != -1) {
-            info?.ssid?.removeSurrounding("\"")
-        } else null
+        return try {
+            val info = wifiManager?.connectionInfo
+            if (info?.networkId != -1) {
+                info?.ssid?.removeSurrounding("\"")
+            } else null
+        } catch (e: Exception) {
+            null
+        }
     }
 }
 
@@ -180,9 +193,13 @@ data class LocationState(
 class StepCounterService @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-    private val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-    private val stepDetector = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR)
+    private val sensorManager: SensorManager? = try {
+        context.getSystemService(Context.SENSOR_SERVICE) as? SensorManager
+    } catch (e: Exception) {
+        null
+    }
+    private val stepSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+    private val stepDetector = sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR)
 
     private val _steps = MutableStateFlow(0)
     val steps: StateFlow<Int> = _steps.asStateFlow()
@@ -216,15 +233,23 @@ class StepCounterService @Inject constructor(
         lastCheckSteps = 0
         lastCheckTime = System.currentTimeMillis()
 
-        stepSensor?.let {
-            sensorManager.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
-        } ?: stepDetector?.let {
-            sensorManager.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+        try {
+            stepSensor?.let {
+                sensorManager?.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+            } ?: stepDetector?.let {
+                sensorManager?.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+            }
+        } catch (e: Exception) {
+            // Sensor not available
         }
     }
 
     fun stopCounting() {
-        sensorManager.unregisterListener(listener)
+        try {
+            sensorManager?.unregisterListener(listener)
+        } catch (e: Exception) {
+            // Ignore
+        }
     }
 
     fun getStepsSinceLastCheck(): Int {
@@ -249,8 +274,12 @@ class StepCounterService @Inject constructor(
 class BarometerService @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-    private val pressureSensor = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE)
+    private val sensorManager: SensorManager? = try {
+        context.getSystemService(Context.SENSOR_SERVICE) as? SensorManager
+    } catch (e: Exception) {
+        null
+    }
+    private val pressureSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_PRESSURE)
 
     private val _altitudeState = MutableStateFlow(AltitudeState())
     val altitudeState: StateFlow<AltitudeState> = _altitudeState.asStateFlow()
@@ -300,13 +329,21 @@ class BarometerService @Inject constructor(
 
     fun startMeasuring() {
         baseAltitude = null
-        pressureSensor?.let {
-            sensorManager.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+        try {
+            pressureSensor?.let {
+                sensorManager?.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+            }
+        } catch (e: Exception) {
+            // Sensor not available
         }
     }
 
     fun stopMeasuring() {
-        sensorManager.unregisterListener(listener)
+        try {
+            sensorManager?.unregisterListener(listener)
+        } catch (e: Exception) {
+            // Ignore
+        }
     }
 
     fun reset() {
@@ -330,8 +367,12 @@ data class AltitudeState(
 class LightSensorService @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-    private val lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT)
+    private val sensorManager: SensorManager? = try {
+        context.getSystemService(Context.SENSOR_SERVICE) as? SensorManager
+    } catch (e: Exception) {
+        null
+    }
+    private val lightSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_LIGHT)
 
     private val _lightState = MutableStateFlow(LightState())
     val lightState: StateFlow<LightState> = _lightState.asStateFlow()
@@ -363,13 +404,21 @@ class LightSensorService @Inject constructor(
     }
 
     fun startMeasuring() {
-        lightSensor?.let {
-            sensorManager.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+        try {
+            lightSensor?.let {
+                sensorManager?.registerListener(listener, it, SensorManager.SENSOR_DELAY_NORMAL)
+            }
+        } catch (e: Exception) {
+            // Sensor not available
         }
     }
 
     fun stopMeasuring() {
-        sensorManager.unregisterListener(listener)
+        try {
+            sensorManager?.unregisterListener(listener)
+        } catch (e: Exception) {
+            // Ignore
+        }
     }
 }
 
